@@ -2,12 +2,12 @@
 Helper utility for including __Handlebars__ template files
 
 ### Installation  
-`npm install handlebars-partial-helper`
+`npm install handlebars-partial-file`
 
 ### Usage
 ###### Require the package and initialize options:
 ```javascript
-const hbsPartialHelper = require('handlebars-partial-helper')(options);
+const hbsPartialFile = require('handlebars-partial-file')(options);
 ```
 __options__
 ```javascript
@@ -18,7 +18,7 @@ __options__
 
 ###### Register a file as a Handlebars partial
 ```javascript
-hbsPartialHelper.registerFile(filepath, [nameOfPartial]);
+hbsPartialFile.registerFile(filepath, [nameOfPartial]);
 ```
 __args__  
 `filepath` - The file path to include as partial.  
@@ -26,7 +26,7 @@ __args__
 
 ###### Register a directory whose files are to be registered as Handlebars partials
 ```javascript
-hbsPartialHelper.registerDirectory(dirPath, ext);
+hbsPartialFile.registerDirectory(dirPath, ext);
 ```
 __args__  
 `dirPath` - Directory path whose files to include.  
