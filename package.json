@@ -1,5 +1,5 @@
 {
-  "name": "handlebars-partial-helper",
+  "name": "handlebars-partial-file",
   "version": "1.0.0",
   "description": "Helper utility for including Handlebars template files",
   "main": "index.js",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ikmich/handlebars-partial-helper"
+    "url": "https://github.com/ikmich/handlebars-partial-file"
   },
   "author": "Ikenna Agbasimalo <michfx@gmail.com>",
   "license": "ISC",
