@@ -1,7 +1,7 @@
 {
   "name": "handlebars-partial-file",
   "version": "1.0.0",
-  "description": "Helper utility for including Handlebars template files",
+  "description": "Helper utility for including files as Handlebars template partials",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

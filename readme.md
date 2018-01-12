@@ -1,5 +1,5 @@
 ### Description
-Helper utility for including __Handlebars__ template files. __handlebars-partial-file__ reads a file's contents and registers it as a partial for use within a Handlebars template.
+Helper utility for including files as Handlebars template partials. __handlebars-partial-file__ reads a file's contents and registers it as a partial for use within a Handlebars template.
 
 ### Installation  
 `npm install handlebars-partial-file`
