@@ -1,6 +1,6 @@
 {
   "name": "handlebars-partial-helper",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Helper utility for including Handlebars template files",
   "main": "index.js",
   "scripts": {
