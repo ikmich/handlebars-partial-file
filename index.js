@@ -1,4 +1,3 @@
-// Todo - Make this a Node module.
 
 const _fs = require('fs');
 const _path = require('path');
@@ -54,7 +53,7 @@ let fn = function(config = { referenceDir: '' }) {
     this.registerDirectory = function(dirPath, ext = null) {
         // Normalize extension string param.
         ext = (typeof ext === 'string') ?
-            (ext.trim() != '*' ? ('.' + ext.replace(/^\.+/, '').trim()) : ext.trim()) :
+            (ext.trim() !== '*' ? ('.' + ext.replace(/^\.+/, '').trim()) : ext.trim()) :
             null;
 
         let path = _path.resolve(_path.join(values.referenceDir, dirPath));
