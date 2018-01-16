@@ -1,4 +1,3 @@
-// Todo - Make this a Node module.
 
 const _fs = require('fs');
 const _path = require('path');
