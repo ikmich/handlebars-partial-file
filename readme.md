@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ikmich/handlebars-partial-file.svg?branch=master)](https://travis-ci.org/ikmich/handlebars-partial-file)
+
 ### Description
 Helper utility for including files as Handlebars template partials. __handlebars-partial-file__ reads a file's contents and registers it as a partial for use within a Handlebars template.
 
