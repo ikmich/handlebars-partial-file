@@ -49,6 +49,7 @@ describe('The main module', function () {
         const result = hbsPartialFile.registerDirectory(dirPath);
 
         assert.isOk(result, 'dir files registered');
+        assert(typeof result === 'object');
     });
 
 });
