@@ -25,6 +25,13 @@ describe('The main module', function () {
         });
     }
 
+    function stubReadFileNotExists() {
+        //sinon.stub().throws();
+        this.sandbox.stub(fs, 'readFileSync').callsFake(function () {
+            throw new Error('ENOENT: no such file or directory');
+        });
+    }
+
     function stubReadDir() {
         this.sandbox.stub(fs, 'readdirSync').callsFake(function () {
             return dirContents;
@@ -48,6 +55,18 @@ describe('The main module', function () {
 
         assert.isOk(result, 'dir files registered');
         assert(typeof result === 'object');
+    });
+
+    it("fails when file does not exist", function () {
+        stubReadFileNotExists.apply(this);
+        stubReadDir.apply(this);
+
+        const fn = function () {
+            hbsPartialFile.registerFile(filePath);
+            hbsPartialFile.registerDirectory(dirPath);
+        };
+
+        expect(fn).to.throw(Error);
     });
 
 });
