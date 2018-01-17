@@ -4,8 +4,6 @@ const chai = require('chai');
 const assert = chai.assert;
 const expect = chai.expect;
 
-const isValidPath = require('is-valid-path');
-
 const fs = require('fs');
 
 describe('The main module', function () {
